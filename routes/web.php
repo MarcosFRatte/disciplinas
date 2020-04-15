@@ -13,7 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/','DisciplinaController@index');
+Route::get('/','DisciplinaController@Index');
+
+Route::get('/create','DisciplinaController@Create');
+Route::get('/show','DisciplinaController@Show');
 
 Route::resource('disciplinas','DisciplinaController@index');
 
